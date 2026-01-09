@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Contact Form</title>
+</head>
+<body>
+    
+    <!-- mailto: starts an email to be sent to a specific address -->
+    <form action="mailto:info@coffee.com" method="post" enctype="text/plain" class="contact-form">
+
+        <div class="input-section">
+            <label for="input-topic">Topic:</label>
+            <select name="topic" id="input-topic" required>
+                <option value="" disabled selected>Choose a Topic</option>
+                <option value="love-coffee">I love coffee</option>
+                <option value="hate-coffee">I hate coffee</option>
+            </select>
+        </div>
+
+        <div class="input-section">
+            <label for="input-name">Name:</label>
+            <input type="text" name="name" id="input-name"
+                placeholder="John Smith" required>
+        </div>
+
+        <div class="input-section">
+            <label for="input-email">Email:</label>
+            <input type="email" name="email" id="input-email"
+                placeholder="me@example.com" required>
+        </div>
+
+        <div class="input-section">
+            <label for="input-message">Message:</label>
+            <textarea name="message" id="input-message"
+                cols="30" rows="10"
+                placeholder="Your message here..."
+                required minlength="20"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Clear</button>
+
+    </form>
+
+</body>
+</html>

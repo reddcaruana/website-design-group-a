@@ -239,6 +239,37 @@ p {
     text-overflow: ellipsis;
 }
 
+/************************* CONTACT *************************/
+.contact-form label {
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    appearance: none;
+
+    font-family: var(--font-normal);
+    font-size: 1em;
+
+    border-color: var(--muted);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+
+    display: block;
+    width: 100%;
+    padding: var(--space-1);
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .input-section {
+    margin: var(--space-2) 0;
+}
+
 /************************* MOBILE *************************/
 @media (max-width: 600px) {
 
